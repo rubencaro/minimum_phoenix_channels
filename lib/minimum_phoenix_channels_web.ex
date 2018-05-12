@@ -22,7 +22,6 @@ defmodule MinimumPhoenixChannelsWeb do
       use Phoenix.Controller, namespace: MinimumPhoenixChannelsWeb
       import Plug.Conn
       import MinimumPhoenixChannelsWeb.Router.Helpers
-      import MinimumPhoenixChannelsWeb.Gettext
     end
   end
 
@@ -36,7 +35,6 @@ defmodule MinimumPhoenixChannelsWeb do
 
       import MinimumPhoenixChannelsWeb.Router.Helpers
       import MinimumPhoenixChannelsWeb.ErrorHelpers
-      import MinimumPhoenixChannelsWeb.Gettext
     end
   end
 
@@ -51,7 +49,6 @@ defmodule MinimumPhoenixChannelsWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import MinimumPhoenixChannelsWeb.Gettext
     end
   end
 
